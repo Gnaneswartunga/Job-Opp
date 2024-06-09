@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunga Gnaneswar - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        .portfolio-item {
+            background-color: white;
+            padding: 1em;
+            margin-bottom: 1em;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .portfolio-item h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Media Query for Mobile Devices */
+
+        /* Add this CSS to display the hamburger icon only on mobile devices */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 500px) {
+    .menu-icon {
+        display: block; /* Show the menu icon */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    nav {
+        display: none; /* Hide the navigation links by default */
+    }
+
+    nav.show {
+        display: block; /* Show the navigation links when the menu icon is clicked */
+        position: absolute;
+        top: 60px; /* Adjust the positioning as needed */
+        background-color: #4CAF50;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.show a {
+        display: block;
+        padding: 1em 0;
+        color: white;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TUNGA GNANESWAR</h1>
+        <p>Contact: +91 6301508340</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#myeducation">My Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <div class="menu-icon">&#9776;</div>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Tunga Eswar, and this is my personal webpage. Welcome to my portfolio where you can see my latest projects and works.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="portfolio-item">
+                <p><b>Programming Languages:</b> Java Programming</p>
+                <p><b>Front End:</b> HTML5, CSS, JavaScript</p>
+                <p><b>Back End:</b> Java, JDBC, SPRING BOOT</p>
+                <p><b>Database:</b> MySQL DataBase</p>
+                <p><b>Tools:</b> Virtual Studio Code, Eclipse, Git & GitHub</p>
+                <p><b>Platform:</b> Windows Operating System, Kali Linux</p>
+                
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <h3>Detection of Fake and Clone Accounts of Twitter</h3>
+                <p>Description: The project aims to enhance social media safety by identifying both fake and clone profiles. By employing similarity measures, the system can effectively detect clones based on attributes and network similarities, outperforming the C4.5 algorithm in clone detection. This approach involves profile information extraction, attribute comparison, and threshold-based labeling to distinguish between normal, clone, and fake profiles, ensuring a robust detection mechanism for social network security.</p>
+                <p>Technologies: HTML, CSS, JavaScript, Django, Python, SQL.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Netflix Homepage</h3>
+                <p>Description: The "Netflix Homepage" is a web development project aimed at recreating the iconic Netflix homepage using HTML, CSS, and a touch of JavaScript. The objective is to demonstrate proficiency in front-end technologies and showcase the ability to design and implement a user interface similar to a popular streaming service.</p>
+                <p>Technologies: HTML, CSS, JavaScript.</p>
+            </div>
+        </section>
+
+        <section id="myeducation">
+            <h2>My Education</h2>
+            <div class="portfolio-item">
+                <h3>Sri Venkateswara Engineering College, B.Tech</h3>
+                <p>Course Name: Information Technology</p>
+                <p>Persentage: 75%</p>
+                <p>Location: Tirupathi</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Narayana Junior College, Intermediate</h3>
+                <p>Course Name: MPC</p>
+                <p>Persentage: 71%</p>
+                <p>Location: Tirupathi</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:tungagnaneswar12@gmail.com">tungagnaneswar12@gmail.com</a>.</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/gnaneswar-t-898115229/" target="_blank">tungagnaneswar</a></p>
+            <p>GitHub: <a href="https://github.com/Gnaneswartunga" target="_blank">tungagnaneswar</a></p><br><br>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Tunga Eswar
+    </footer>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('show');
+        });
+    </script>
+    
+</body>
+</html>
